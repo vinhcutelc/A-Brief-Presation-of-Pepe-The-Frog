@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	display: flex;
+	background: #0AA60E;
+	width: 80%;
+	margin: auto;
+	height: 50px;
+	align-items: center;
+}
+.logo-container,
+.nav-links{
+	display: flex;
+}
+.logo-container{
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+.logo-container img{
+	margin-right: 10px;
+	width: 55px;
+}
+.logo{
+	color: #EFEFEF;
+	font-weight: 400px;
+}
+nav{
+	flex: 2;
+}
+.nav-links{
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.prestation{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+
+.intro-text h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+.intro-text p{
+	margin-top: 5px;
+}
+.cta{
+	padding: 50px 0px 0px 10px ;
+}
+.morepepe{
+	width: 100px;
+	height: 30px;
+	border: solid 1px #0AA60E;
+	cursor: pointer;
+	color: #0AA60E;
+	background: #FFFFFF;
+}
+.morepepe button::hover{
+	color: #FFFFFF;
+	background: #0AA60E;
+}
+.clickbait{
+	width: 100px;
+	height: 30px;
+	border: solid 1px #0AA60E;
+	cursor: pointer;
+	color: #FFFFFF;
+	background: #0AA60E;
+}
+.cover{
+	animation: float 1.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes float{
+	0% { transform: translate(4px, 4px) rotate(0deg); }
+  	10% { transform: translate(-3px, -4px) rotate(-4deg); }
+  	20% { transform: translate(-6px, 3px) rotate(3deg); }
+  	30% { transform: translate(5px, 4px) rotate(0deg); }
+  	40% { transform: translate(1px, -1px) rotate(1deg); }
+  	50% { transform: translate(-4px, 5px) rotate(-5deg); }
+  	60% { transform: translate(-6px, 12px) rotate(9deg); }
+  	70% { transform: translate(3px, 1px) rotate(-1deg); }
+  	80% { transform: translate(-1px, -1px) rotate(1deg); }
+  	90% { transform: translate(1px, 2px) rotate(0deg); }
+  	100% { transform: translate(1px, -2px) rotate(-1deg);}
+}
+.cover img{
+	height: 400px;
+}
+.nothing{
+	background: #0AA60E;
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+.nothing h1{
+	color: whitesmoke;
+	margin: auto;
+	justify-content: center;
+}
